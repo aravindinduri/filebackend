@@ -32,7 +32,8 @@ DBConnection()
 .catch((error) => {
     console.log("MongoDB Connection Error !!!",error);
 })
-app.post('/test', (req, res) => {
+
+app.get('/test', (req, res) => {
   res.json({ message: "Test route working!" });
 });
 
